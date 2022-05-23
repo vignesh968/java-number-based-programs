@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int min=10;
+int max=0;
+
+while(n!=0)
+{
+int m=n%10;
+min=Math.min(min,m);
+max=Math.max(max,m);
+n/=10;
+}
+System.out.println("max"+max);
+System.out.println("min"+min);
+System.out.println(max-min);
+	}
+}
+/*
+2048
+max 8
+min 0
+8
