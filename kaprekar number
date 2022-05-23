@@ -1,0 +1,31 @@
+import java.util.*;
+class Main
+{
+	public static void main(String arr[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a Number");
+		int a=sc.nextInt();
+		int s,f,l,d=0;
+		for(int i=a;i>0;i/=10)
+		{
+		    d++;
+		}
+		s=a*a;
+		f=s/(int)Math.pow(10,d);
+		l=s%(int)Math.pow(10,d);
+		if(f+l==a)
+		System.out.println("Kaprekar Number");
+		else
+		System.out.println("Not a Kaprekar Number");
+	}
+}
+/*
+45*45=2025
+20+25=45 so 
+kaprekar number
+*/
+/*
+45
+kaprekar number
+*/
