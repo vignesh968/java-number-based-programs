@@ -1,0 +1,37 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int rem=n%10;
+int min=rem;
+int max=rem;
+n/=10;
+while(n!=0)
+{
+   rem=n%10;
+   n/=10;
+   if(rem<min)
+   {
+       
+       min=rem;
+   }
+   if(rem>max)
+   {
+       max=rem;
+   }
+}
+System.out.println("max"+max);
+System.out.println("min"+min);
+System.out.println(max-min);
+	}
+}
+/*
+output
+4
+1 2 3 4
+max 4
+min 1
+3
+*/
