@@ -1,0 +1,30 @@
+import java.util.*;
+class Main
+{
+	public static void main(String[] args) 
+	{
+	Scanner s=new Scanner(System.in);
+	int m=s.nextInt();
+	
+    int sum=0;
+	
+	for(int i=1;i<m;i++)
+	{
+		if(m%i==0)
+		{
+	    sum+=i;	    
+		}
+	}
+	if(sum==m)
+	{
+	    System.out.println("perfect number");
+	}
+	else if(sum>m)
+	{
+	    System.out.println("abundant  number");
+	}
+	else{
+	    System.out.println("deficient number");
+	}
+	}
+}
