@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+	int a=s.nextInt();
+	add(a);
+	
+	}
+	static void add(int a)
+	{
+	    int sum=0;
+	    while(a!=0 ||sum>9)
+	    {
+	        if(a==0)
+	        {
+	            a=sum;
+	            sum=0;
+	        }
+	        sum+=a%10;
+	        a=a/10;
+	    }
+	    System.out.println((sum==1)? "magic number": "not a magic number");
+	}
+}
